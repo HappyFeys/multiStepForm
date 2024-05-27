@@ -1,0 +1,79 @@
+//Colors
+
+//Primary
+
+$Marineblue: hsl(213, 96%, 18%);
+$Purplishblue: hsl(243, 100%, 62%);
+$Pastelblue: hsl(228, 100%, 84%);
+$Lightblue: hsl(206, 94%, 87%);
+$Strawberryred: hsl(354, 84%, 57%);
+
+//Neutral
+
+$Coolgray: hsl(231, 11%, 63%);
+$Lightgray: hsl(229, 24%, 87%);
+$Magnolia: hsl(217, 100%, 97%);
+$Alabaster: hsl(231, 100%, 99%);
+$White: hsl(0, 0%, 100%);
+
+
+.section--stepOne{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 95%;
+    background-color: #fff;
+    margin: auto;
+    margin-top: -70px;
+    padding: 20px;
+    border-radius: 10px;
+    input{
+        width: 100%;
+        margin-top: 2px;
+        margin-bottom: 10px;
+        text-indent: 10px;
+        padding: 10px;
+        border-radius: 3px;
+        border: 1px solid $Lightgray;
+        &::placeholder{
+            font-weight: 700;
+        }
+    }
+    h1{
+        color: $Marineblue;
+        margin-top: 20px;
+    }
+    p{
+        color: $Coolgray;
+        margin: 20px 0;
+    }
+    label{
+        color:$Marineblue;
+        font-size: 12px;
+        font-weight: 500;
+    }
+}
+.divBtn{
+    display: flex;
+    justify-content: flex-end;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    width: 100%;
+    button{
+        margin: 20px;
+        padding: 10px;
+        background-color: $Marineblue;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        border-radius: 3px;
+    }
+}
+
+.isActive{
+    color: $Marineblue;
+    background-color: $Lightblue;
+    font-weight: bold;
+}
