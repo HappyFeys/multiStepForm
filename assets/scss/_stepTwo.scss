@@ -1,0 +1,144 @@
+//Colors
+
+//Primary
+
+$Marineblue: hsl(213, 96%, 18%);
+$Purplishblue: hsl(243, 100%, 62%);
+$Pastelblue: hsl(228, 100%, 84%);
+$Lightblue: hsl(206, 94%, 87%);
+$Strawberryred: hsl(354, 84%, 57%);
+
+//Neutral
+
+$Coolgray: hsl(231, 11%, 63%);
+$Lightgray: hsl(229, 24%, 87%);
+$Magnolia: hsl(217, 100%, 97%);
+$Alabaster: hsl(231, 100%, 99%);
+$White: hsl(0, 0%, 100%);
+
+.section--stepTwo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 95%;
+    background-color: #fff;
+    margin: auto;
+    margin-top: -70px;
+    padding: 20px;
+    border-radius: 10px;
+    h1{
+        color: $Marineblue;
+        margin-top: 20px;
+    }
+    p{
+        color: $Coolgray;
+        margin: 20px 0;
+    }
+    
+    .arcade, .advanced, .pro{
+        border: 1px solid $Lightgray;
+        margin-top: 10px;
+        padding: 10px;
+        display: flex;
+        border-radius: 5px;
+        cursor: pointer;
+        img{
+            align-self: flex-start;
+            margin: 5px;
+        }
+        .divArcade--text, .divAdvanced--text, .divPro--text{
+            display: flex;
+            flex-direction: column;
+            margin-left: 10px;
+            .plan--choice{
+                color: $Marineblue;
+                margin-top: 5px;
+                margin-left: 0px;
+                margin-bottom: 0px;
+            }
+            .plan--price{
+                margin: 0;
+                font-size: 14px;
+            }
+            .monthFree{
+                font-size: 12px;
+                color: $Marineblue;
+                margin: 0;
+                margin-bottom: 5px;
+            }
+        }
+    }
+    .isSelect{
+        border: 1px solid $Purplishblue;
+        background-color: $Alabaster;
+    }
+    .divCheckbox{
+        display: flex;
+        justify-content: center;
+        background-color: $Alabaster;
+        color: $Coolgray;
+        padding: 10px;
+        margin-top: 10px;
+        border-radius: 5px;
+        input{
+            margin: 0 5px;
+        }
+        .checkbox{
+            height: 17px;
+            width: 35px;
+            background: $Marineblue;
+            appearance: none;
+            border-radius: 17px;
+            position: relative;
+            outline: none;
+            cursor: pointer;
+            transition: 0.5s;            
+        }
+        
+        .checkbox::before{
+            height: 17px;
+            width: 17px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            content: "";
+            background: #fff;
+            border-radius: 17px;
+            transform: scale(0.9);
+            transition: 0.5s;
+            
+        }
+        
+        .checkbox:checked::before{
+            left: 17px;
+            background: #fff;            
+        }
+        
+        .checkbox::after{
+            content: "";
+            position: absolute;
+            top: 40px;
+            left: 17px;
+            z-index: -1;
+            transform: translate(-50%,-50%);
+            transition: 0.5s;
+        }
+    }
+}
+.divBtn{
+    .btn--back{
+        background-color: #fff;
+        border: none;
+        color: $Coolgray;
+        margin-left: 20px;
+    }
+    .btnStepTwo{
+        margin: 20px;
+        padding: 10px;
+        background-color: $Marineblue;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        border-radius: 3px;
+    }
+}

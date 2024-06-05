@@ -55,13 +55,13 @@ $White: hsl(0, 0%, 100%);
 }
 .divBtn{
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     background-color: #fff;
-    position: absolute;
-    bottom: 0%;
-    right: 0%;
+    // position: absolute;
+    // bottom: 0%;
+    // right: 0%;
     width: 100%;
-    button{
+    .btnStepOne{
         margin: 20px;
         padding: 10px;
         background-color: $Marineblue;
@@ -69,6 +69,7 @@ $White: hsl(0, 0%, 100%);
         border: none;
         cursor: pointer;
         border-radius: 3px;
+        margin-left: 70%;
     }
 }
 

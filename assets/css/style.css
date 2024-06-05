@@ -48,14 +48,11 @@
 
 .divBtn {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   background-color: #fff;
-  position: absolute;
-  bottom: 0%;
-  right: 0%;
   width: 100%;
 }
-.divBtn button {
+.divBtn .btnStepOne {
   margin: 20px;
   padding: 10px;
   background-color: hsl(213, 96%, 18%);
@@ -63,6 +60,7 @@
   border: none;
   cursor: pointer;
   border-radius: 3px;
+  margin-left: 70%;
 }
 
 .isActive {
@@ -96,6 +94,241 @@ aside div .step__text {
   display: none;
 }
 
+.section--stepTwo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 95%;
+  background-color: #fff;
+  margin: auto;
+  margin-top: -70px;
+  padding: 20px;
+  border-radius: 10px;
+}
+.section--stepTwo h1 {
+  color: hsl(213, 96%, 18%);
+  margin-top: 20px;
+}
+.section--stepTwo p {
+  color: hsl(231, 11%, 63%);
+  margin: 20px 0;
+}
+.section--stepTwo .arcade, .section--stepTwo .advanced, .section--stepTwo .pro {
+  border: 1px solid hsl(229, 24%, 87%);
+  margin-top: 10px;
+  padding: 10px;
+  display: flex;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.section--stepTwo .arcade img, .section--stepTwo .advanced img, .section--stepTwo .pro img {
+  align-self: flex-start;
+  margin: 5px;
+}
+.section--stepTwo .arcade .divArcade--text, .section--stepTwo .arcade .divAdvanced--text, .section--stepTwo .arcade .divPro--text, .section--stepTwo .advanced .divArcade--text, .section--stepTwo .advanced .divAdvanced--text, .section--stepTwo .advanced .divPro--text, .section--stepTwo .pro .divArcade--text, .section--stepTwo .pro .divAdvanced--text, .section--stepTwo .pro .divPro--text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+.section--stepTwo .arcade .divArcade--text .plan--choice, .section--stepTwo .arcade .divAdvanced--text .plan--choice, .section--stepTwo .arcade .divPro--text .plan--choice, .section--stepTwo .advanced .divArcade--text .plan--choice, .section--stepTwo .advanced .divAdvanced--text .plan--choice, .section--stepTwo .advanced .divPro--text .plan--choice, .section--stepTwo .pro .divArcade--text .plan--choice, .section--stepTwo .pro .divAdvanced--text .plan--choice, .section--stepTwo .pro .divPro--text .plan--choice {
+  color: hsl(213, 96%, 18%);
+  margin-top: 5px;
+  margin-left: 0px;
+  margin-bottom: 0px;
+}
+.section--stepTwo .arcade .divArcade--text .plan--price, .section--stepTwo .arcade .divAdvanced--text .plan--price, .section--stepTwo .arcade .divPro--text .plan--price, .section--stepTwo .advanced .divArcade--text .plan--price, .section--stepTwo .advanced .divAdvanced--text .plan--price, .section--stepTwo .advanced .divPro--text .plan--price, .section--stepTwo .pro .divArcade--text .plan--price, .section--stepTwo .pro .divAdvanced--text .plan--price, .section--stepTwo .pro .divPro--text .plan--price {
+  margin: 0;
+  font-size: 14px;
+}
+.section--stepTwo .arcade .divArcade--text .monthFree, .section--stepTwo .arcade .divAdvanced--text .monthFree, .section--stepTwo .arcade .divPro--text .monthFree, .section--stepTwo .advanced .divArcade--text .monthFree, .section--stepTwo .advanced .divAdvanced--text .monthFree, .section--stepTwo .advanced .divPro--text .monthFree, .section--stepTwo .pro .divArcade--text .monthFree, .section--stepTwo .pro .divAdvanced--text .monthFree, .section--stepTwo .pro .divPro--text .monthFree {
+  font-size: 12px;
+  color: hsl(213, 96%, 18%);
+  margin: 0;
+  margin-bottom: 5px;
+}
+.section--stepTwo .isSelect {
+  border: 1px solid hsl(243, 100%, 62%);
+  background-color: hsl(231, 100%, 99%);
+}
+.section--stepTwo .divCheckbox {
+  display: flex;
+  justify-content: center;
+  background-color: hsl(231, 100%, 99%);
+  color: hsl(231, 11%, 63%);
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+.section--stepTwo .divCheckbox input {
+  margin: 0 5px;
+}
+.section--stepTwo .divCheckbox .checkbox {
+  height: 17px;
+  width: 35px;
+  background: hsl(213, 96%, 18%);
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-radius: 17px;
+  position: relative;
+  outline: none;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.section--stepTwo .divCheckbox .checkbox::before {
+  height: 17px;
+  width: 17px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  background: #fff;
+  border-radius: 17px;
+  transform: scale(0.9);
+  transition: 0.5s;
+}
+.section--stepTwo .divCheckbox .checkbox:checked::before {
+  left: 17px;
+  background: #fff;
+}
+.section--stepTwo .divCheckbox .checkbox::after {
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 17px;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  transition: 0.5s;
+}
+
+.divBtn .btn--back {
+  background-color: #fff;
+  border: none;
+  color: hsl(231, 11%, 63%);
+  margin-left: 20px;
+}
+.divBtn .btnStepTwo {
+  margin: 20px;
+  padding: 10px;
+  background-color: hsl(213, 96%, 18%);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.section--stepThree {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 95%;
+  background-color: #fff;
+  margin: auto;
+  margin-top: -70px;
+  padding: 20px;
+  border-radius: 10px;
+}
+.section--stepThree h1 {
+  color: hsl(213, 96%, 18%);
+  margin-top: 20px;
+}
+.section--stepThree p {
+  color: hsl(231, 11%, 63%);
+  margin: 20px 0;
+}
+.section--stepThree .addonOne, .section--stepThree .addonTwo, .section--stepThree .addonThree {
+  display: grid;
+  grid-template-columns: 50px 2fr 50px;
+  align-items: center;
+  border: 1px solid hsl(229, 24%, 87%);
+  border-radius: 5px;
+  margin: 10px 0;
+  padding: 10px;
+}
+.section--stepThree .addonOne input, .section--stepThree .addonTwo input, .section--stepThree .addonThree input {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  border: 1px solid hsl(229, 24%, 87%);
+}
+.section--stepThree .addonOne .divAddOne .add--choice, .section--stepThree .addonOne .divAddTwo .add--choice, .section--stepThree .addonOne .divAddThree .add--choice, .section--stepThree .addonTwo .divAddOne .add--choice, .section--stepThree .addonTwo .divAddTwo .add--choice, .section--stepThree .addonTwo .divAddThree .add--choice, .section--stepThree .addonThree .divAddOne .add--choice, .section--stepThree .addonThree .divAddTwo .add--choice, .section--stepThree .addonThree .divAddThree .add--choice {
+  color: hsl(213, 96%, 18%);
+  font-weight: bold;
+  margin-bottom: 0;
+  font-size: 15px;
+}
+.section--stepThree .addonOne .divAddOne .add--description, .section--stepThree .addonOne .divAddTwo .add--description, .section--stepThree .addonOne .divAddThree .add--description, .section--stepThree .addonTwo .divAddOne .add--description, .section--stepThree .addonTwo .divAddTwo .add--description, .section--stepThree .addonTwo .divAddThree .add--description, .section--stepThree .addonThree .divAddOne .add--description, .section--stepThree .addonThree .divAddTwo .add--description, .section--stepThree .addonThree .divAddThree .add--description {
+  margin-top: 0;
+  font-size: 13px;
+}
+.section--stepThree .addonOne .add--price, .section--stepThree .addonTwo .add--price, .section--stepThree .addonThree .add--price {
+  font-size: 12px;
+  color: hsl(243, 100%, 62%);
+}
+.section--stepThree .isSelect {
+  border: 1px solid hsl(243, 100%, 62%);
+  background-color: hsl(231, 100%, 99%);
+}
+
+.divBtn .btn--back {
+  background-color: #fff;
+  border: none;
+  color: hsl(231, 11%, 63%);
+  margin-left: 20px;
+}
+.divBtn .btnStepThree {
+  margin: 20px;
+  padding: 10px;
+  background-color: hsl(213, 96%, 18%);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.section--stepFour {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 95%;
+  background-color: #fff;
+  margin: auto;
+  margin-top: -70px;
+  padding: 20px;
+  border-radius: 10px;
+}
+.section--stepFour h1 {
+  color: hsl(213, 96%, 18%);
+  margin-top: 20px;
+}
+.section--stepFour p {
+  color: hsl(231, 11%, 63%);
+  margin: 20px 0;
+}
+.section--stepFour .recap {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  background-color: hsl(217, 100%, 97%);
+  padding: 10px;
+  border-radius: 5px;
+}
+.section--stepFour .recap .divPlanChoice {
+  display: flex;
+  justify-content: space-between;
+}
+.section--stepFour .recap .recap__addon {
+  display: flex;
+  justify-content: space-between;
+}
+.section--stepFour .total {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
 *, ::before, ::after {
   margin: 0;
   padding: 0;
@@ -105,7 +338,7 @@ aside div .step__text {
   font-family: "Ubuntu", sans-serif;
 }
 
-main {
+.mainContainer {
   width: 100%;
   height: 95vh;
   background-color: hsl(217, 100%, 97%);
