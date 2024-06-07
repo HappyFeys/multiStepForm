@@ -329,6 +329,41 @@ aside div .step__text {
   justify-content: space-between;
 }
 
+.divBtn .confirm {
+  margin: 20px;
+  padding: 10px;
+  background-color: hsl(213, 96%, 18%);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.section--finalStep {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  background-color: #fff;
+  margin: auto;
+  margin-top: -70px;
+  padding: 100px 20px;
+  border-radius: 10px;
+}
+.section--finalStep h1 {
+  color: hsl(213, 96%, 18%);
+  margin-top: 20px;
+}
+.section--finalStep p {
+  color: hsl(231, 11%, 63%);
+  margin: 20px 0;
+  text-align: center;
+}
+.section--finalStep img {
+  width: 50px;
+}
+
 *, ::before, ::after {
   margin: 0;
   padding: 0;

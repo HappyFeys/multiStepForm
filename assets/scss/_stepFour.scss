@@ -58,3 +58,15 @@ $White: hsl(0, 0%, 100%);
         justify-content: space-between;
     }
 }
+
+.divBtn{
+    .confirm{
+        margin: 20px;
+        padding: 10px;
+        background-color: $Marineblue;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        border-radius: 3px;
+    }
+}

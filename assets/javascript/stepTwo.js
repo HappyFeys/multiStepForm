@@ -13,7 +13,9 @@ export function stepTwo() {
 
     asideStepOne.classList.remove("isActive")
     asideStepTwo.classList.add("isActive")
+    
     sectionOne.remove()
+    
     const section = document.createElement("section")
     section.classList.add("section--stepTwo")
     mainContainer.insertBefore(section,divBtn)
