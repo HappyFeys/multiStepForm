@@ -39,6 +39,7 @@
 .section--stepOne p {
   color: hsl(231, 11%, 63%);
   margin: 20px 0;
+  line-height: 25px;
 }
 .section--stepOne label {
   color: hsl(213, 96%, 18%);
@@ -112,6 +113,7 @@ aside div .step__text {
 .section--stepTwo p {
   color: hsl(231, 11%, 63%);
   margin: 20px 0;
+  line-height: 25px;
 }
 .section--stepTwo .arcade, .section--stepTwo .advanced, .section--stepTwo .pro {
   border: 1px solid hsl(229, 24%, 87%);
@@ -235,6 +237,7 @@ aside div .step__text {
 .section--stepThree p {
   color: hsl(231, 11%, 63%);
   margin: 20px 0;
+  line-height: 25px;
 }
 .section--stepThree .addonOne, .section--stepThree .addonTwo, .section--stepThree .addonThree {
   display: grid;
@@ -318,15 +321,36 @@ aside div .step__text {
   display: flex;
   justify-content: space-between;
 }
+.section--stepFour .recap .divPlanChoice .planChoice, .section--stepFour .recap .divPlanChoice .price {
+  color: hsl(213, 96%, 18%);
+  font-weight: bold;
+}
+.section--stepFour .recap .divPlanChoice .linkStepTwo {
+  text-decoration: underline;
+  margin-top: 0;
+}
+.section--stepFour .recap .divPlanChoice .planChoice {
+  margin-bottom: 0;
+}
+.section--stepFour .recap .divPlanChoice .price {
+  align-self: center;
+}
 .section--stepFour .recap .recap__addon {
   display: flex;
   justify-content: space-between;
 }
+.section--stepFour .recap .recap__addon .recap__addon--price {
+  color: hsl(213, 96%, 18%);
+}
 .section--stepFour .total {
-  width: 80%;
+  width: 75%;
   margin: auto;
   display: flex;
   justify-content: space-between;
+}
+.section--stepFour .total .recap__total--price {
+  color: hsl(243, 100%, 62%);
+  font-weight: bold;
 }
 
 .divBtn .confirm {

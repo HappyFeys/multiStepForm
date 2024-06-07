@@ -11,9 +11,6 @@ Fontend Mentor est un site proposant des défis à réaliser pour s'améliorer e
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
@@ -36,6 +33,8 @@ Les utilisateurs doivent être capables de
 ### Screenshot
 
 ![alt text](image.png)
+![alt text](image-1.png)
+![alt text](image-2.png)
 
 ### Links
 

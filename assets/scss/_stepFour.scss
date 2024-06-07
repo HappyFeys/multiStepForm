@@ -33,6 +33,7 @@ $White: hsl(0, 0%, 100%);
     p{
         color: $Coolgray;
         margin: 20px 0;
+        
     }
     .recap{
         width: 80%;
@@ -45,17 +46,38 @@ $White: hsl(0, 0%, 100%);
         .divPlanChoice{
             display: flex;
             justify-content: space-between;
+            .planChoice,.price{
+                color: $Marineblue;
+                font-weight: bold;
+            }
+            .linkStepTwo{
+                text-decoration: underline;
+                margin-top: 0;
+            }
+            .planChoice{
+                margin-bottom:0 ;
+            }
+            .price{
+                align-self: center;
+            }
         }
         .recap__addon{
             display: flex;
             justify-content: space-between;
+            .recap__addon--price{
+                color: $Marineblue;
+            }
         }
     }
     .total{
-        width: 80%;
+        width: 75%;
         margin: auto;
         display: flex;
         justify-content: space-between;
+        .recap__total--price{
+            color: $Purplishblue;
+            font-weight: bold;
+        }
     }
 }
 
