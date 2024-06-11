@@ -52,8 +52,12 @@ Les utilisateurs doivent être capables de
 
 ## Author
 
-- Github - [Dylan Feys](https://happyfeys.github.io/multiStepForm/)
+- Github - [Dylan Feys](https://github.com/HappyFeys)
 
 
 ## Acknowledgments
 
+
+## Remarque
+
+Quelques bugs connus sont encore à corriger, je dois également m'occuper du style pour le desktop. 

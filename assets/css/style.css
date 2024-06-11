@@ -25,12 +25,22 @@
   padding: 10px;
   border-radius: 3px;
   border: 1px solid hsl(229, 24%, 87%);
+  color: hsl(213, 96%, 18%);
+  font-weight: bold;
 }
 .section--stepOne input::-moz-placeholder {
   font-weight: 700;
 }
 .section--stepOne input::placeholder {
   font-weight: 700;
+}
+.section--stepOne input:focus {
+  outline: none;
+  border: 1px solid hsl(213, 96%, 18%);
+}
+.section--stepOne input:invalid {
+  outline: none;
+  border: 1px solid red;
 }
 .section--stepOne h1 {
   color: hsl(213, 96%, 18%);

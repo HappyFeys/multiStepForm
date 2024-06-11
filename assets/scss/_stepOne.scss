@@ -35,8 +35,18 @@ $White: hsl(0, 0%, 100%);
         padding: 10px;
         border-radius: 3px;
         border: 1px solid $Lightgray;
+        color: $Marineblue;
+        font-weight: bold;
         &::placeholder{
             font-weight: 700;
+        }
+        &:focus{
+            outline: none;
+            border: 1px solid $Marineblue;
+        }
+        &:invalid{
+            outline: none;
+            border: 1px solid red;
         }
     }
     h1{
@@ -58,9 +68,6 @@ $White: hsl(0, 0%, 100%);
     display: flex;
     justify-content: space-between;
     background-color: #fff;
-    // position: absolute;
-    // bottom: 0%;
-    // right: 0%;
     width: 100%;
     .btnStepOne{
         margin: 20px;
